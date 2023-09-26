@@ -1,0 +1,883 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html,
+body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+
+}
+
+.main {
+      width: 100%;
+}
+
+body::-webkit-scrollbar {
+      display: none;
+}
+
+.upperwork {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      z-index: 999999999999;
+}
+
+.text {
+      background-color: #f1f1f1;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding: 0.3vw 2vw;
+      gap: 10px;
+      justify-content: center;
+}
+
+.upperwork h3 {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 500;
+}
+
+.upperwork P,
+span {
+      font-size: 22px;
+      color: #FA5881;
+      font-weight: 700;
+}
+
+.upperwork button {
+      padding: 9px 28px;
+      border-radius: 100px;
+      font-weight: 600;
+      color: purple;
+      text-transform: capitalize;
+      border: 1px solid purple;
+      background-color: transparent;
+}
+
+.upperwork:hover button {
+      background-color: purple;
+      color: #ffff;
+}
+
+.border {
+      border: 2px solid purple;
+}
+
+/* nav */
+.nav {
+      margin-top: 45px;
+      padding-left: 10vw;
+      width: 100vw;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      background-color: #FFDAE3;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav h3 {
+      padding-top: 1vw;
+      font-size: 1vw;
+      font-weight: 600;
+      color: #FA5881;
+      letter-spacing: 0.4vw;
+}
+
+.icon-shopping {
+      display: flex;
+      font-size: 2VW;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+}
+
+.icon-shopping i {
+      margin-right: -2vw;
+      margin-left: 7vw;
+      color: #D8AED1;
+}
+
+.special {
+      margin-left: 1.5vw;
+      font-size: 1vw;
+      margin-top: 1vw;
+      padding: 0.1vw 0.2vw;
+      background-color: #FFA357;
+      margin-bottom: 2vw;
+      color: #fff;
+      border-radius: 50%;
+}
+
+.icon-Information {
+      display: flex;
+      margin-left: 3vw;
+      width: 16vw;
+      height: 100%;
+      align-items: center;
+      background-color: #FFA6B8;
+}
+.icon-Information a{
+      text-decoration: none;
+      color: #000000;
+}
+.icon-Information i {
+      margin-left: 0.7vw;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      font-size: 2vw;
+      border-radius: 5px;
+      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+}
+
+.icn-border {
+      cursor: pointer;
+      padding: 0.1vw 0.1vw;
+      border: 0.1vw solid transparent;
+}
+
+.icn-border:hover {
+      border-radius: 5px;
+      border: 0.1vw solid blue;
+}
+
+.menue {
+      display: none;
+}
+
+/* sect1 */
+.sect1 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15vw;
+      background-color: #fff;
+}
+
+.sect1 img {
+      margin-left: 11vw;
+      width: 35vw;
+}
+
+.icon-sect1 {
+      margin-left: 15vw;
+      font-size: 3.5vw;
+      opacity: 0.5;
+}
+
+/* sect2 */
+.sect2 {
+      width: 100%;
+      height: 4vw;
+      background-color: #fccfda;
+      text-transform: uppercase;
+      font-family: Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5vw;
+      position: relative;
+}
+
+.sect2 a {
+      text-decoration: none;
+}
+
+.sect2 a,
+p {
+      font-weight: 500;
+      color: #f33262;
+      border-bottom: 0.1vw solid transparent;
+      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+      font-size: 1.1vw;
+}
+
+.underline-border:hover p {
+      color: purple;
+      border-bottom: 0.1vw solid #ffffffff;
+}
+
+/* those element who will present on the screen */
+.shope-by1 {
+      padding-top: 0.5vw;
+      text-align: center;
+      width: 10vw;
+      height: 9vw;
+      text-transform: uppercase;
+      background-color: #ffdded;
+      position: absolute;
+      z-index: 999;
+      top: 4.2vw;
+      left: 49.8vw;
+      opacity: 0;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+/* Sect3  */
+.sect3 {
+      width: 100%;
+      height: 40vw;
+      padding-top: 5vw;
+      background: linear-gradient(to top, #FFEDEC, #FFEDEC);
+      margin-bottom: 1.5vw;
+      display: flex;
+      position: relative;
+}
+
+.flower {
+      top: 8%;
+      left: 11%;
+      position: absolute;
+}
+
+.flower img {
+      top: 10%;
+      left: 15%;
+      position: absolute;
+      width: 7vw;
+
+}
+
+.frame {
+      margin-left: 15vw;
+      width: 26vw;
+      height: 32vw;
+      rotate: -5deg;
+      background-color: #fff;
+      position: relative;
+}
+
+.frame img {
+      padding: 0.3vw 0.3vw;
+      width: 26vw;
+      height: 30vw;
+}
+
+.flower {
+      position: absolute;
+      width: 1px;
+      background-color: green;
+}
+
+.text-sect3 {
+      width: 100%;
+      height: 100%;
+      padding: 6vw 12vw;
+      background-color: transparent;
+}
+
+.sect3 h1 {
+      font-family: "kimberly signature";
+      font-weight: 300;
+      word-spacing: 1vw;
+      font-size: 4vw;
+      color: #FF8AA1;
+}
+
+.sect3 h2 {
+      margin-top: 0vw;
+      font-size: 5.5vw;
+      font-family: "Rose Quay";
+      font-weight: 900;
+}
+
+h2 span {
+      letter-spacing: -1vw;
+      font-size: 5vw;
+}
+
+.Questioner {
+      font-size: 5.3vw;
+      margin-left: 5px;
+}
+
+.star {
+      display: flex;
+      align-items: center;
+      color: #ffff;
+      font-size: 7vw;
+      margin: 5vw 5vw;
+}
+
+/* sect4 */
+.sect4 {
+      width: 100%;
+      display: flex;
+      margin-top: 1vw;
+      margin-left: 0.5vw;
+}
+
+.box {
+      width: 33vw;
+      height: 45vw;
+      position: relative;
+      text-align: center;
+}
+
+.box img {
+      padding: 0.1vw 0.4vw;
+      width: 33vw;
+      height: 45vw;
+      object-fit: cover;
+}
+
+.box h2 {
+      position: absolute;
+      top: 94%;
+      color: #f33262;
+      background-color: #FFEDEC;
+      padding: 2px 5px;
+      left: 10%;
+      font-size: 1.2vw;
+      font-family: Arial;
+      font-weight: 500;
+}
+
+.box h2:hover {
+      color: #F672AD;
+}
+
+/* footer */
+.footer {
+      margin-top: 4vw;
+      width: 100%;
+      background-color: #FFEDEC;
+}
+
+.hed-text {
+      text-align: center;
+      flex-direction: column;
+      line-height: 4vw;
+      padding-top: 5vw;
+}
+
+.footer h1 {
+      font-family: "Kimberly Signature";
+      font-weight: 200;
+      color: #FFB26A;
+      font-size: 5vw;
+      filter: brightness(2px);
+      padding: 1.1vw 0vw 1vw 0vw;
+}
+
+.footer h2 {
+      margin-top: 0vw;
+      font-size: 5.3vw;
+      font-family: "Rose Quay";
+      font-weight: 900;
+}
+
+.blog {
+      margin-top: 5vw;
+      width: 100%;
+      height: 18vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+      display: flex;
+      position: relative;
+}
+
+.blog::-webkit-scrollbar {
+      display: none;
+}
+
+.box-x {
+      flex-shrink: 0;
+      width: 20vw;
+      height: 18vw;
+}
+
+.box-x img {
+      width: 20vw;
+      height: 18vw;
+}
+
+.link {
+      margin-top: 1.5vw;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.left h1 {
+      font-weight: 100;
+      color: #F95881;
+      font-size: 3vw;
+}
+
+.left a {
+      text-decoration: none;
+      justify-content: start;
+}
+
+.left a p {
+      font-family: Arial;
+      color: #000000;
+      margin-top: 2vw;
+      text-transform: uppercase;
+      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+}
+
+.left a:hover p {
+      color: #ffffffff;
+}
+
+.intermediate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.circle {
+      width: 16vw;
+      height: 16vw;
+      border-radius: 8vw;
+      background-color: #ffff;
+}
+
+.circle img {
+      margin-top: 5vw;
+      margin-left: 0.3vw;
+      width: 15vw;
+}
+
+.txt h1 {
+      font-family: Arial;
+      font-size: 1.6vw;
+      color: #F672AD;
+      font-weight: 700;
+      text-align: center;
+}
+
+.txt {
+      margin-top: 5vw;
+}
+
+.btn {
+      margin-top: 1.5vw;
+}
+
+.btn input:nth-last-child(2) {
+      padding: 1vw 5vw;
+      outline: none;
+      border: none;
+      border: 0.1vw solid transparent;
+}
+
+.btn button {
+      margin-left: 0.2vw;
+      padding: 1vw 1vw;
+      text-transform: uppercase;
+      width: 7.4vw;
+      outline: none;
+      border: none;
+      background-color: #FFB26A;
+      position: relative;
+      font-size: 1vw;
+      font-weight: 700;
+      color: #ffff;
+}
+
+#hvr:hover {
+      border: 0.1vw solid #F672AD;
+}
+
+.right h1 {
+      font-weight: 100;
+      color: #F95881;
+      font-size: 3vw;
+}
+
+.right ul {
+      margin-top: 2vw;
+}
+
+ul p {
+      margin-top: 3vw;
+      font-family: Arial;
+      color: #000;
+}
+
+.Authority {
+      margin-top: 5vw;
+      width: 100%;
+      height: 3vw;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #f7d5d6;
+}
+
+.Authority p {
+      color: #000000;
+      font-size: 1.0vw;
+      font-family: montserrat;
+}
+
+/* top content of left side */
+.control-left-block {
+      margin-left: -100vw;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.showMenue {
+      width: 32vw;
+      height: 46.5vw;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FFEDEC;
+      z-index: 999999999999999999999999999999999;
+}
+
+.showMenue img {
+      width: 25vw;
+}
+
+.remove i {
+      margin-left: 27vw;
+      font-size: 3vw;
+      cursor: pointer;
+      color: #FFA357;
+}
+
+.showMenue h3 {
+      font-family: "Kimberly Signature";
+      font-size: 3.5vw;
+      color: #F95881;
+      font-weight: 100;
+      margin-top: 2.3vw;
+}
+
+.side-block {
+      margin-top: 0.5vw;
+      background-color: transparent;
+      flex-direction: column;
+      display: flex;
+      gap: 2vw;
+      text-align: center;
+      font-family: Arial;
+}
+
+.side-block p {
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+      color: #000000;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 1.6vw;
+      text-transform: uppercase;
+}
+
+.side-block p:hover {
+      color: #f33262;
+}
+
+.icon-Info {
+      margin-top: 1.8vw;
+      display: flex;
+      justify-content: center;
+      width: 18vw;
+      height: 4vw;
+}
+
+.dsp-non {
+      display: none;
+}
+
+.icon-Info i {
+      margin: 0.7vw;
+      padding: 0;
+}
+
+@media (max-width:600px) {
+
+      /* Left side work */
+
+      .showMenue {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFEDEC;
+            z-index: 999999999999999999999999999999999;
+      }
+      .remove{
+            margin-top: 20px;
+            margin-left: -120px;
+      }
+      .remove i{
+            font-size: 10vw;
+            cursor: pointer;
+            background-color: #000;
+            border-radius: 5px;
+      }
+      .showMenue img {
+            width: 100%;
+      }
+      .side-block p {
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+            color: #000000;
+            font-weight: 500;
+            cursor: pointer;
+            line-height: 60px;
+            font-size: 7.6vw;
+            text-transform: uppercase;
+      }
+      .showMenue h3 {
+            font-family: "Kimberly Signature";
+            font-size: 20vw;
+            color: #F95881;
+            font-weight: 100;
+            margin-top: 2.3vw;
+      }
+      .icon-Info {
+            margin-top: 1.8vw;
+            display: flex;
+            justify-content: center;
+            width: 18vw;
+            height: 4vw;
+      }
+      .icon-Information i {
+            margin: 0.7vw;
+            padding: 0;
+            position: relative;
+            z-index: 99999999999999;
+            background-color: green;
+      }
+      .upperwork {
+            display: none;
+      }
+      #border-bottom {
+            display: none;
+      }
+      .main {
+            margin-top: 0;
+      }
+      .nav h3 {
+            display: none;
+      }
+      .icon-Information {
+            display: none;
+      }
+      .nav {
+            margin-top: 0;
+            height: 14vw;
+      }
+      .icon-shopping {
+            position: relative;
+      }
+      .icon-shopping i {
+            margin-left: -15vw;
+            font-size: 8vw;
+            font-weight: 900;
+            color: #C4ABE5;
+      }
+      .special {
+            top: -4px;
+            left: -35px;
+            position: absolute;
+            width: 3.4vw;
+            height: 3.4vw;
+            font-size: 12px;
+            color: #fff;
+            border-radius: 50%;
+            background-color: #FFA357;
+      }
+      .special span {
+            padding: 1.vw 1.2vw;
+            font-weight: 900;
+            font-size: 8vw;
+            margin-left: -2vw;
+      }
+      .menue {
+            display: block;
+            margin-left: 47vw;
+      }
+      .menue i {
+            font-size: 7vw;
+            font-weight: 500;
+      }
+      .sect1 {
+            margin-left: -6vw;
+            height: 37vw;
+      }
+      .sect1 img {
+            width: 90vw;
+      }
+      .sect1 i {
+            display: none;
+      }
+      .sect2 {
+            display: none;
+      }
+      .sect3 {
+            padding-top: 12vw;
+            height: 160vw;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            position: relative;
+      }
+      .frame {
+            margin-left: 0;
+            rotate: 0;
+            transform: rotate(-7deg);
+            height: 200vw;
+            width: 60vw
+      }
+      .frame img {
+            padding: 1.2vw 1.2vw;
+            background-position: cover;
+            width: 60vw;
+            height: 70vw;
+      }
+      .text-sect3 {
+            margin-top: 5vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+      .text-sect3 h1 {
+            margin-top: 7vw;
+            font-family: "Kimberly Signature";
+            font-weight: 100;
+            font-size: 10vw;
+      }
+      .sect3 h2 {
+            margin-top: 2vw;
+            font-size: 12vw;
+            font-family: "Rose Quay";
+            font-weight: 700;
+      }
+      .sect4 {
+            flex-direction: column;
+            width: 100vw;
+
+      }
+      .sect4 h2 {
+            font-size: 18px;
+      }
+      h2 span {
+            font-size: 17vw;
+      }
+      h2 i {
+            font-size: 17vw;
+      }
+     .box {
+            margin-top: 2vw;
+            width: 100%;
+            height: 150vw;
+      }
+      .box img {
+            width: 100vw;
+            height: 150vw;
+      }
+      .flower {
+            position: absolute;
+            top: 7%;
+            left: 6%;
+      }
+      .flower img {
+            width: 17vw;
+      }
+      .footer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            /* height: 110vw; */
+      }
+      .hed-text h1 {
+            font-size: 10vw;
+            margin-bottom: 12vw;
+      }
+      .d2-span span {
+            font-size: 12vw;
+      }
+      .blog {
+            display: none;
+            margin-top: 10vw;
+            width: 100%;
+            gap: 2vw;
+            height: 80vw;
+      }
+      .blog img {
+            width: 50vw;
+            height: 30vw;
+      }
+      .link {
+            flex-direction: column;
+            text-align: center;
+      }
+      .right {
+            margin-top: 5vw;
+      }
+      .right p {
+            font-size: 4vw;
+      }
+      .right h1 {
+            font-size: 10vw;
+      }
+      .left {
+            display: none;
+      }
+      .btn {
+            display: flex;
+            align-items: center;
+      }
+      .btn input {
+            height: 3vw;
+            width: 20vw;
+      }
+      .btn {
+            display: none;
+      }
+      .dsp-non {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+      }
+      .dsp-non .txt h1 {
+            font-weight: 600;
+            font-size: 4vw;
+      }
+      .hvr {
+            width: 80vw;
+      }
+      .Authority {
+            height: 4vh;
+      }
+      .circle {
+            margin-top: 5vw;
+            width: 50vw;
+            height: 50vw;
+            border-radius: 25vw;
+      }
+      .circle img {
+            width: 40vw;
+            height: 40vw;
+            border-radius: 20vw;
+      }
+      .Authority p {
+            font-size: 1.4vmax;
+      }
+}
